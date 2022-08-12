@@ -22,6 +22,7 @@ function MenuSection(props) {
   return <section className="menuSection">{props.children}</section>;
 }
 function MenuSectionTitle(props) {
+  // eslint-disable-next-line react/jsx-no-comment-textnodes
   return <h1 className="menuSectionTitle">// {props.children}</h1>;
 }
 function MenuSectionDescription(props) {
