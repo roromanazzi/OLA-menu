@@ -1,11 +1,13 @@
 export const menuSections = [
   {
     title: "PLATITOS",
+    id: "MS1",
     dishes: [
       {
         title: "TABLITA",
         price: 2100,
-        description: "Queso gouda, brie y reggianito; jamón crudo, spianata de hierbas y pepperoni Las Dinas.",
+        description:
+          "Queso gouda, brie y reggianito; jamón crudo, spianata de hierbas y pepperoni Las Dinas.",
       },
       {
         title: "PAPAS OLAVA",
@@ -43,7 +45,8 @@ export const menuSections = [
       {
         title: "BOMBITA DARIN",
         price: 950,
-        description: "Bombas de papa con queso y crispy bacon, con alioli de sriracha.",
+        description:
+          "Bombas de papa con queso y crispy bacon, con alioli de sriracha.",
       },
       {
         title: "LANGOSTINOS EMPANADOS",
@@ -53,6 +56,7 @@ export const menuSections = [
   },
   {
     title: "PIZZAS",
+    id: "MS2",
     description: "6 porciones - Masa madre y fermentación larga.",
     dishes: [
       {
@@ -67,15 +71,21 @@ export const menuSections = [
         title: "PEPPERONI",
         price: 1800,
       },
+      {
+        title: "JAMON CRUDO",
+        price: 1900,
+      },
     ],
   },
   {
     title: "ENTRE PANES",
+    id: "MS3",
     dishes: [
       {
         title: "PHILLY TOMMY",
         price: 1700,
-        description: "Dados de lomo, cebolla caramelizada y cheddar en pan brioche acompañados de papas fritas.",
+        description:
+          "Dados de lomo, cebolla caramelizada y cheddar en pan brioche acompañados de papas fritas.",
       },
       {
         title: "BURGER",
@@ -86,42 +96,50 @@ export const menuSections = [
       {
         title: "SANDWICH DE SALMON",
         price: 1600,
-        description: "Queso crema, ciboulette y rúcula con guarnición de hojas verdes.",
+        description:
+          "Queso crema, ciboulette y rúcula con guarnición de hojas verdes.",
       },
       {
         title: "PORTOBELLO ROAD",
         price: 1200,
-        description: "En pan integral con semillas, tomate, zuchinni, queso y cebolla morada.",
+        description:
+          "En pan integral con semillas, tomate, zuchinni, queso y cebolla morada.",
       },
       {
         title: "CLUB CHICKEN",
         price: 1550,
-        description: "Pollo, queso, cebolla caramelizada, palta y tomates confitados.",
+        description:
+          "Pollo, queso, cebolla caramelizada, palta y tomates confitados.",
       },
     ],
   },
   {
     title: "ENSALADAS",
+    id: "MS4",
     dishes: [
       {
         title: "OLAVA",
         price: 1650,
-        description: "Rúcula, champignones, cebolla caramelizada, cherries y salmón.",
+        description:
+          "Rúcula, champignones, cebolla caramelizada, cherries y salmón.",
       },
       {
         title: "CAESAR",
         price: 1700,
-        description: "Pollo, hojas verdes, parmesano, croutones y aderezo Caesar.",
+        description:
+          "Pollo, hojas verdes, parmesano, croutones y aderezo Caesar.",
       },
       {
         title: "COUS COUS & LANGOSTINOS",
         price: 1500,
-        description: "Cous cous, langostinos, verdes, cebolla morada, cherries, cremoso de zapallo, oliva y semillas.",
+        description:
+          "Cous cous, langostinos, verdes, cebolla morada, cherries, cremoso de zapallo, oliva y semillas.",
       },
     ],
   },
   {
     title: "PRINCIPALES",
+    id: "MS5",
     dishes: [
       {
         title: "RISOTTO DE HONGOS",
@@ -131,12 +149,14 @@ export const menuSections = [
       {
         title: "TERNERITA AL MALBEC",
         price: 1800,
-        description: "Ternera en cocción lenta y reducción de vino tinto con puré de papa.",
+        description:
+          "Ternera en cocción lenta y reducción de vino tinto con puré de papa.",
       },
       {
         title: "MILA COMO EN CASA",
         price: 2200,
-        description: "Milanesa de ojo de bife con fideos con manteca y queso gratén.",
+        description:
+          "Milanesa de ojo de bife con fideos con manteca y queso gratén.",
       },
       {
         title: "ESTOFADO DE CORDERO",
@@ -172,6 +192,7 @@ export const menuSections = [
   },
   {
     title: "POSTRES",
+    id: "MS6",
     dishes: [
       {
         title: "FLAN DE PANDE",
@@ -181,7 +202,8 @@ export const menuSections = [
       {
         title: "VOLCAN",
         price: 750,
-        description: "De chocolate con helado de americana y salsa de frutos rojos.",
+        description:
+          "De chocolate con helado de americana y salsa de frutos rojos.",
       },
       {
         title: "TIRAMISU",
