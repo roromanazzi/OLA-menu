@@ -20,6 +20,6 @@
 .menuItemsATag:focus,
 .menuItemsATag:active {
   text-decoration: none;
-  color: inherit;
+  color: black;
   background-color: #ffffff;
 }
