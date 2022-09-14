@@ -6,7 +6,7 @@ import { menuSections } from "./placeholder/menuItems";
 import HeaderOption from "./components/HeaderOption";
 
 function MainImg() {
-  return <img src={mainImgSrc} className="mainImg"></img>;
+  return <img src={mainImgSrc} className="mainImg" alt=""></img>;
 }
 
 function SideImg() {
