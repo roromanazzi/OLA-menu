@@ -1,9 +1,13 @@
 import "./App.css";
 import sideImgSrc from "./img/langostinos.jpg";
-import footerImgSrc from "./img/olafooter.png";
+import LogoOlaImgSrc from "./img/olafooter.png";
 import mainImgSrc from "./img/salonLele2.jpg";
 import { menuSections } from "./placeholder/menuItems";
 import HeaderOption from "./components/HeaderOption";
+
+function LogoOla() {
+  return <img src={LogoOlaImgSrc} className="logoOla" alt="logoOla"></img>;
+}
 
 function MainImg() {
   return <img src={mainImgSrc} className="mainImg" alt=""></img>;
@@ -68,9 +72,15 @@ function DishDescription(props) {
 function App() {
   return (
     <div className="App">
-      <MainImg></MainImg>
+      <div className="headerImg" id="App">
+        <MainImg></MainImg>
+        <h2 className="mainTitle">KITCHEN</h2>
+      </div>
       <div className="page">
         <div className="header">
+          <a href="#App">
+            <LogoOla className="logoOlaHeader"></LogoOla>
+          </a>
           <HeaderOption></HeaderOption>
         </div>
         <div className="sections">
@@ -100,11 +110,7 @@ function App() {
           })}
           <MenuSection>
             <footer>
-              <img
-                src={footerImgSrc}
-                alt="logo de Ola"
-                className="footerImg"
-              ></img>
+              <LogoOla></LogoOla>
             </footer>
             <footer>Coded by Rocío Romanazzi</footer>
           </MenuSection>
