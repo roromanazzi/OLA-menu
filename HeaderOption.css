@@ -1,0 +1,20 @@
+.menuItemsButton {
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  box-shadow: none;
+}
+
+.menuItemsATag {
+  text-decoration: none;
+  background-color: none;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  color: black;
+}
+
+.menuItemsATag:visited {
+  background-color: none;
+  color: black;
+}
