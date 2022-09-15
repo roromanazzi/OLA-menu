@@ -18,20 +18,34 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: space-between;
   justify-content: center;
-  max-width: max(800px, 100%);
+  width: 100vw;
+  /* max-width: max(800px, 100%); */
   /* padding-top: 60px; */
   padding-bottom: 60px;
 }
 
-.headerImg {
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+.headerContainer {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.headerImgTitleContainer {
   justify-content: center;
   align-items: center;
   object-fit: cover;
   width: 100%;
   height: 100vh;
   position: relative;
+  /* filter: grayscale(50%); */
 }
 
 .mainImg {
@@ -51,13 +65,15 @@ body {
   font-weight: 100;
   top: -64%;
   transition: 300ms;
+  backdrop-filter: brightness(50%);
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
   background: #ffffff;
   border: 0 solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -70,9 +86,6 @@ body {
   text-decoration: none;
   width: auto;
   border-radius: 8px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   position: fixed;
   width: 100%;
   left: 0;
@@ -81,21 +94,15 @@ body {
   transition: 400ms;
 }
 
-.logoOla {
-  max-width: 90px;
-  height: auto;
-  object-fit: cover;
-}
-
 .header:hover {
   opacity: 1;
   color: black;
 }
 
-.page {
-  display: flex;
-  flex-direction: row;
-  max-width: inherit;
+.logoOla {
+  max-width: 90px;
+  height: auto;
+  object-fit: cover;
 }
 
 .sideImgContainer {
@@ -103,10 +110,20 @@ body {
 }
 
 .sideImg {
-  width: 180px;
+  width: 300px;
   object-fit: cover;
   height: 100%;
   transition: 600ms;
+  align-self: flex-end;
+}
+
+.dishesAndSideImg {
+  display: flex;
+}
+
+.bodyContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .menuSection {
@@ -201,8 +218,8 @@ body {
 @media (max-width: 700px) {
   body {
     max-width: 100vw;
-    padding-top: 40px;
   }
+
   .menuSection {
     padding-right: 16px;
     padding-left: 16px;
@@ -211,5 +228,32 @@ body {
   }
   .menuSectionTitle {
     font-size: 2.5rem;
+  }
+
+  .header {
+    opacity: 1;
+    overflow: scroll;
+    position: sticky;
+    gap: 16px;
+    z-index: 9;
+    justify-content: start;
+  }
+
+  .header::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bodyContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoOla {
+    object-fit: contain;
+  }
+
+  .mainTitle {
+    font-size: xx-large;
+    letter-spacing: 16px;
   }
 }

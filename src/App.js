@@ -72,51 +72,58 @@ function DishDescription(props) {
 function App() {
   return (
     <div className="App">
-      <div className="headerImg" id="App">
-        <MainImg></MainImg>
-        <h2 className="mainTitle">KITCHEN</h2>
-      </div>
       <div className="page">
-        <div className="header">
-          <a href="#App">
-            <LogoOla className="logoOlaHeader"></LogoOla>
-          </a>
-          <HeaderOption></HeaderOption>
+        <div className="headerContainer"></div>
+        <div className="headerImgTitleContainer" id="App">
+          <MainImg></MainImg>
+          <h2 className="mainTitle">KITCHEN</h2>
         </div>
-        <div className="sections">
-          {menuSections.map((section) => {
-            return (
-              <MenuSection key={section.title} id={section.id}>
-                <MenuSectionTitle>{section.title}</MenuSectionTitle>
-                <MenuSectionDescription>
-                  {section?.description}
-                </MenuSectionDescription>
-                <MenuSectionDishes>
-                  {section.dishes.map((dish) => {
-                    return (
-                      <Dish key={dish.title}>
-                        <DishHeader>
-                          <DishTitle>{dish.title}</DishTitle>
-                          <DishPortion>{dish?.portion}</DishPortion>
-                          <DishPrice>{dish.price}</DishPrice>
-                        </DishHeader>
-                        <DishDescription>{dish?.description}</DishDescription>
-                      </Dish>
-                    );
-                  })}
-                </MenuSectionDishes>
+        <div className="bodyContainer">
+          <div className="header">
+            <a href="#App">
+              <LogoOla id="logoOlaHeader"></LogoOla>
+            </a>
+            <HeaderOption></HeaderOption>
+          </div>
+          <div className="dishesAndSideImg">
+            <div className="sections">
+              {menuSections.map((section) => {
+                return (
+                  <MenuSection key={section.title} id={section.id}>
+                    <MenuSectionTitle>{section.title}</MenuSectionTitle>
+                    <MenuSectionDescription>
+                      {section?.description}
+                    </MenuSectionDescription>
+                    <MenuSectionDishes>
+                      {section.dishes.map((dish) => {
+                        return (
+                          <Dish key={dish.title}>
+                            <DishHeader>
+                              <DishTitle>{dish.title}</DishTitle>
+                              <DishPortion>{dish?.portion}</DishPortion>
+                              <DishPrice>{dish.price}</DishPrice>
+                            </DishHeader>
+                            <DishDescription>
+                              {dish?.description}
+                            </DishDescription>
+                          </Dish>
+                        );
+                      })}
+                    </MenuSectionDishes>
+                  </MenuSection>
+                );
+              })}
+              <MenuSection>
+                <footer>
+                  <LogoOla></LogoOla>
+                </footer>
+                <footer>Coded by Rocío Romanazzi</footer>
               </MenuSection>
-            );
-          })}
-          <MenuSection>
-            <footer>
-              <LogoOla></LogoOla>
-            </footer>
-            <footer>Coded by Rocío Romanazzi</footer>
-          </MenuSection>
-        </div>
-        <div className="sideImgContainer">
-          <SideImg></SideImg>
+            </div>
+            <div className="sideImgContainer">
+              <SideImg></SideImg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
